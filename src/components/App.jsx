@@ -1,7 +1,9 @@
 import React from 'react';
+import './app.scss';
+import Habits from './habits';
 
 const App = () => {
-  return <h1>HELLO</h1>;
+  return <Habits />;
 };
 
 export default App;
