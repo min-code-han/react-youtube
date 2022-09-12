@@ -3,6 +3,39 @@ button {
   background: none;
 }
 
+header {
+  padding: 1rem;
+  background-color: cadetblue;
+  margin-bottom: 2rem;
+
+  .nav-total {
+    display: flex;
+    align-items: center;
+
+    &-count {
+      font-size: 2.5rem;
+      color: blue;
+      font-weight: bold;
+    }
+  }
+}
+
+.add-form {
+
+  &-input {
+    margin-right: 0.2rem;
+    font-size: 2rem;
+  }
+
+  &-button {
+    height: 100%;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.5rem;
+    background-color: #b0d1b1;
+    color: #fff;
+  }
+}
+
 .habit {
   padding: 2px 0;
   list-style: none;
@@ -28,6 +61,10 @@ button {
   &:hover {
     background: antiquewhite;
   }
+}
+
+.reset-btn {
+  margin-top: 3rem;
 }
 
 
