@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, memo } from 'react';
 
-const AddForm = (props) => {
+const AddForm = memo((props) => {
   const formRef = useRef();
   const inputRef = useRef();
 
@@ -22,6 +22,6 @@ const AddForm = (props) => {
       <button className="add-form-button">ADD</button>
     </form>
   );
-};
+});
 
 export default AddForm;
