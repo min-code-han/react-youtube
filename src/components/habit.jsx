@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 
 class Habit extends Component {
+  componentDidMount() {
+    // UI상에 등록이 되렀을 때 !
+    // 로딩 스피너,,
+  }
+
+  componentWillUnmount() {
+    // UI상에 사라졌을때 !!
+  }
+
   render() {
     const { name, count } = this.props.habit;
     return (
