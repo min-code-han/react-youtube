@@ -1,14 +1,14 @@
 import React, { useRef } from 'react';
 
-const AddForm = () => {
+const AddForm = (props) => {
   const formRef = useRef();
   const inputRef = useRef();
 
   const onSubmit = (event) => {
     event.preventDefault();
-    const name = this.inputRef.current.value;
-    name && this.props.onAdd(name);
-    this.formRef.current.reset();
+    const name = inputRef.current.value;
+    name && props.onAdd(name);
+    formRef.current.reset();
   };
 
   return (
